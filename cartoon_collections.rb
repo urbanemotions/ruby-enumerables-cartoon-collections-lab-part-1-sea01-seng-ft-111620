@@ -11,10 +11,11 @@ def list_dwarves(array)
   #
   # Print a numbered list of each element
   
-  #array.each_with_index { |dwarves, i| print "#{i+1}.*#{dwarves} "} 
+  array.each_with_index { |dwarves, i| print "#{i+1}.*#{dwarves} "} 
   
-  array.each_with_index do |dwarves, index|
-    indexplusone = index + 1 
-    print "#{indexplusone}.*#{dwarves} "
-  end
+  #another way to do this:-
+  #array.each_with_index do |dwarves, index|
+  #  indexplusone = index + 1 
+  #  print "#{indexplusone}.*#{dwarves} "
+  #end
 end
